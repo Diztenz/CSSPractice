@@ -10,11 +10,95 @@
   }
 </style>
 
+<p>Change the Color of Text<br>
+Now let's change the color of some of our text.<br>
+<br>
+We can do this by changing the style of your h2 element.<br>
+<br>
+The property that is responsible for the color of an element's text is the <br>color style property.<br>
+<br>
+Here's how you would set your h2 element's text color to blue:<br>
+<br>
+&lt;h2 style="color: blue;">CatPhotoApp&lt;/h2><br>
+&lt;h2 style="color: red;">CatPhotoApp&lt;/h2>
+Note that it is a good practice to end inline style declarations with a ; .<br>
+</p>
+
+
 <h2 class="red-text">CatPhotoApp</h2>
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
   <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Use CSS Selectors to Style ElementsPassed
+With CSS, there are hundreds of CSS properties that you can use to change the way an element looks on your page.<br>
+<br>
+When you entered &lt;h2 style="color: red;">CatPhotoApp&lt;/h2>, you were styling that individual h2 element with inline CSS, which stands for Cascading Style Sheets.<br>
+<br>
+That's one way to specify the style of an element, but there's a better way to apply CSS.<br>
+<br>
+At the top of your code, create a style block like this:<br>
+<br>
+&lt;style><br>
+&lt;/style><br>
+Inside that style block, you can create a CSS selector for all h2 elements. For example, if you wanted all h2 elements to be red, you would add a style rule that looks like this:<br>
+<br>
+&lt;style><br>
+  h2 {<br>
+    color: red;<br>
+  }<br>
+&lt;/style><br>
+<br>
+Note that it's important to have both opening and closing curly braces ({ and }) around each element's style rule(s). You also need to make sure that your element's style definition is between the opening and closing style tags. Finally, be sure to add a semicolon to the end of each of your element's style rules.<br>
+<br>
+</p>
+
+<style>
+  h2 {
+    color: blue;
+  }
+</style>
+
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+<p>Use a CSS Class to Style an ElementPassed<br>
+Classes are reusable styles that can be added to HTML elements.<br>
+<br>
+Here's an example CSS class declaration:<br>
+<br>
+&lt;style><br>
+  .blue-text {<br>
+    color: blue;<br>
+  }<br>
+&lt;/style><br>
+You can see that we've created a CSS class called blue-text within the &lt;style> tag. You can apply a class to an HTML element like this: &lt;h2 class="blue-text">CatPhotoApp&lt;/h2>. Note that in your CSS style element, class names start with a period"." In your HTML elements' class attribute, the class name does not include the period.</p>
+<br>
+
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+
+  <p>Change the Font Size of an Element<br>
+Font size is controlled by the font-size CSS property, like this:<br>
+<br>
+h1 {<br>
+  font-size: 30px;<br>
+}<br>
+</p>
 
   <div>
     <p>Things cats love:</p>
