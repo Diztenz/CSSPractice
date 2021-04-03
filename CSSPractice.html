@@ -232,7 +232,7 @@ a width of 500 pixels, we'd use:<br>
 <br>
 &lt;style><br>
   .smaller-image {<br>
-    width: 500px;<br>
+    width: 500px (or 300px, or 100px, etc.);<br>
   }<br>
 &lt;/style><br>
 Makes the image smaller when the img is given the .smaller-image (.larger-image) class. <br>
@@ -240,6 +240,49 @@ Makes the image smaller when the img is given the .smaller-image (.larger-image)
 
 </p>
 
+<p>
+  Add Borders Around Your Elements<br>
+CSS borders have properties like style, color and width.<br>
+<br>
+For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:<br>
+<br>
+&lt;style><br>
+  .thin-red-border {<br>
+    border-color: red;<br>
+    border-width: 5px;<br>
+    border-style: solid;<br>
+    border-radius: 10px; You can add the border radius to multiple classes .thin-red-border or .smaller-image class<br>
+  }<br>
+  &lt;/style><br>
+  <br>
+  Add Rounded Corners with border-radius<br>
+Your cat photo currently has sharp corners. We can round out those corners with a CSS property called border-radius.<br>
+You can also give the image a circular border with border-radius: 50%; (or 60%, or 70%, etc.)<br>
+
+class can have multiple classes:<br>
+&lt;img class="class1 class2"> all inside one set of quotation marks.
+</p>
+<style>
+   .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+</style>
+
+ <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+ <style>
+   .thick-blue-border {
+    border-color: blue;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+
+ <a href="#"><img class="smaller-image thick-blue-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
     <p>This is pissing me off</p>
   </form>
