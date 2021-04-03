@@ -207,7 +207,7 @@ Family names are case-sensitive and need to be wrapped in quotes if there is a s
     <label><input type="checkbox" name="personality"> Energetic</label><br>
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
-
+  </form>
     <p>
     	Specify How Fonts Should Degrade<br>
 There are several default fonts that are available in all browsers. These generic font families include<br> monospace, serif and sans-serif<br>
@@ -300,6 +300,7 @@ class can have multiple classes:<br>
   .silver-background {
     background-color: silver;
   }
+ 
 </style>
 <div class="silver-background">
   <p>Things cats love:</p>
@@ -315,5 +316,66 @@ class can have multiple classes:<br>
       <li>other cats</li>
     </ol>
 </div>
-  </form>
+
+<p>
+  Set the id of an Element<br>
+In addition to classes, each HTML element can also have an id attribute.<br>
+<br>
+There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn <br>
+that you can use them to select and modify specific elements with JavaScript.<br>
+<br>
+id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. <br>
+So please don't give more than one element the same id attribute.<br>
+<br>
+Here's an example of how you give your h2 element the id of cat-photo-app:<br>
+<br>
+&lt;h2 id="cat-photo-app"><br>
+</p>
+Set the id of an Element<br>
+In addition to classes, each HTML element can also have an id attribute.<br>
+<br>
+There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn <br>
+that you can use them to select and modify specific elements with JavaScript.<br>
+<br>
+id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't <br>
+give more than one element the same id attribute.<br>
+<br>
+Here's an example of how you give your h2 element the id of cat-photo-app:<br>
+<br>
+&lt;h2 id="cat-photo-app"><br>
+</p>
+<p>
+  Use an id Attribute to Style an Element<br>
+  One cool thing about id attributes is that, like classes, you can style them using CSS.<br>
+  <br>
+  However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance)<br>
+   than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.<br>
+   <br>
+  Here's an example of how you can take your element with the id attribute of cat-photo-element and give it the<br>
+  background color of green. In your style element:<br>
+  <br>
+  #cat-photo-element {<br>
+    background-color: green;<br>
+  }<br>
+  Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference <br>
+  ids by putting a # in front of their names.<br>
+</p>
+
+<style>
+   
+  #cat-photo-form {
+    background-color: green;
+  }
+</style>
+
+<form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label><br>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+  
 </main>
