@@ -123,6 +123,67 @@ h1 {<br>
 }<br>
 </p>
 
+<p>Set the Font Family of an Element<br>
+You can set which font an element should use, by using the font-family property.<br>
+<br>
+For example, if you wanted to set your h2 element's font to sans-serif, you would use the following CSS:<br>
+
+h2 {<br>
+  font-family: sans-serif; <br><!-- other example font monospace -->
+}<br>
+<br>
+  p {<br>
+    font-size: 16px;<br>
+    font-family: monospace;<br>
+  }<br>
+</p>
+
+<p>Import a Google Font<br>
+In addition to specifying common fonts that are found on most operating systems, <br>
+we can also specify non-standard, custom web fonts for use on our website. <br>
+There are many sources for web fonts on the Internet. For this example we will <br>
+focus on the Google Fonts library.<br>
+<br>
+Google Fonts is a free library of web fonts that you can use in your CSS by <br>
+referencing the font's URL.<br>
+<br>
+So, let's go ahead and import and apply a Google font <br>
+(note that if Google is blocked in your country, you will need to skip this challenge).<br>
+<br>
+To import a Google Font, you can copy the font's URL from the Google Fonts <br>
+library and then paste it in your HTML. For this challenge, we'll import the <br>
+Lobster font. To do this, copy the following code snippet and paste it into the <br>
+top of your code editor (before the opening style element):<br>
+<br>
+&lt;link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><br>
+Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following <br>example:<br>
+<br>
+font-family: FAMILY_NAME, GENERIC_NAME;<br>
+The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available.<br> This is covered in the next challenge.<br>
+<br>
+Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For<br> example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.<br>
+	<br>
+</p>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> -->
+
+
+<style>
+  .red-text {
+    color: red;
+  }
+  h2 {
+    font-family: Lobster;
+  }
+  p {
+    font-size: 16px;
+    font-family: serif;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
   <div>
     <p>Things cats love:</p>
     <ul>
@@ -146,6 +207,39 @@ h1 {<br>
     <label><input type="checkbox" name="personality"> Energetic</label><br>
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
+
+    <p>
+    	Specify How Fonts Should Degrade<br>
+There are several default fonts that are available in all browsers. These generic font families include<br> monospace, serif and sans-serif<br>
+<br>
+When one font isn't available, you can tell the browser to "degrade" to another font.<br>
+<br>
+For example, if you wanted an element to use the Helvetica font, but degrade to the sans-serif font when<br> Helvetica isn't available, you will specify it as follows:<br>
+<br>
+p {<br>
+  font-family: Helvetica, sans-serif;<br>
+}<br>
+<br>
+Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS <br>keywords.<br>
+    </p>
+<p>
+	Size Your Images<br>
+CSS has a property called width that controls an element's width. Just like with fonts, we'll use px<br>
+(pixels) to specify the image's width.<br>
+<br>
+For example, if we wanted to create a CSS class called larger-image that gave HTML elements <br>
+a width of 500 pixels, we'd use:<br>
+<br>
+&lt;style><br>
+  .smaller-image {<br>
+    width: 500px;<br>
+  }<br>
+&lt;/style><br>
+Makes the image smaller when the img is given the .smaller-image (.larger-image) class. <br>
+ &lt;a href="#">&lt;img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">&lt;/a>
+
+</p>
+
 
     <p>This is pissing me off</p>
   </form>
