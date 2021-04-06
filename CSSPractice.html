@@ -377,5 +377,269 @@ Here's an example of how you give your h2 element the id of cat-photo-app:<br>
   <input type="text" placeholder="cat photo URL" required>
   <button type="submit">Submit</button>
 </form>
+
+
+
+  <p>
+    Adjust the Padding of an Element<br>
+    <br>
+Now let's put our Cat Photo App away for a little while and learn more about styling HTML.<br>
+<br>
+You may have already noticed this, but all HTML elements are essentially little rectangles.<br>
+<br>
+Three important properties control the space that surrounds each HTML element: padding, <br>
+border, and margin.<br>
+<br>
+An element's padding controls the amount of space between the element's content and its border.<br>
+<br>
+Here, we can see that the blue box and the red box are nested within the yellow box. Note that the <br>
+red box has more padding than the blue box.<br>
+<br>
+When you increase the blue box's padding, it will increase the distance (padding) between <br>
+the text and the border around it.<br>
+
+&lt;style><br>
+  .injected-text {<br>
+    margin-bottom: -25px;<br>
+    text-align: center;<br>
+  }<br>
+  <br>
+  .box {<br>
+    border-style: solid;<br>
+    border-color: black;<br>
+    border-width: 5px;<br>
+    text-align: center;<br>
+  }<br>
+  <br>
+  .yellow-box {<br>
+    background-color: yellow;<br>
+    padding: 20px;<br>
+  }<br>
+  <br>
+  .red-box {<br>
+    background-color: crimson;<br>
+    color: #fff;<br>
+    padding: 20px;<br>
+  }<br>
+  <br>
+  .blue-box {<br>
+    background-color: blue;<br>
+    color: #fff;<br>
+    padding: 20px;<br>
+  }<br>
+&lt;/style><br>
+&lt;h5 class="injected-text">margin</h5><br>
+<br>
+&lt;div class="box yellow-box"><br>
+&lt;h5 class="box red-box">padding</h5><br>
+&lt;h5 class="box blue-box">padding</h5><br>
+&lt;/div><br>
+  </p>
+  <style>
+    .injected-text {
+      margin-bottom: -25px;
+      text-align: center;
+    }
+  
+    .box {
+      border-style: solid;
+      border-color: black;
+      border-width: 5px;
+      text-align: center;
+    }
+  
+    .yellow-box {
+      background-color: yellow;
+      padding: 20px;
+    }
+  
+    .red-box {
+      background-color: crimson;
+      color: #fff;
+      padding: 20px;
+    }
+  
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      padding: 20px;
+    }
+
+    [type='checkbox'] {
+  margin: 10px 0px 15px 0px
+}
+  </style>
+  <h5 class="injected-text">margin</h5>
+  
+  <div class="box yellow-box">
+    <h5 class="box red-box">padding</h5>
+    <h5 class="box blue-box">padding</h5>
+  </div>
+
+  <p>
+    Adjust the Margin of an Element<br>
+<br>
+An element's margin controls the amount of space between an element's border and surrounding elements.<br>
+<br>
+Here, we can see that the blue box and the red box are nested within the yellow box. <br>
+<br>Note that the red box has a bigger margin than the blue box, making it appear smaller.<br>
+<br>
+When you increase the blue box's margin, it will increase the distance between its <br>
+border and surrounding elements.<br>
+  
+&lt;style><br><br>
+  .injected-text {<br>
+    margin-bottom: -25px;<br>
+    text-align: center;<br>
+  }<br>
+<br>
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .blue-box {<br>
+    background-color: blue;<br>
+    color: #fff;<br>
+    padding: 20px;<br>
+    margin: 20px;<br>
+  }/style><br>
+&lt;h5 class="injected-text">margin&lt;/h5><br>
+<br>
+&lt;div class="box yellow-box"><br>
+  &lt;h5 class="box red-box">padding&lt;/h5><br>
+  &lt;h5 class="box blue-box">padding&lt;/h5><br>
+&lt;/div><br>
+
+Add a Negative Margin to an Element<br>
+<br>
+An element's margin controls the amount of space between an element's border and surrounding elements.<br>
+<br>
+If you set an element's margin to a negative value, the element will grow larger.<br>
+<br>
+Try to set the margin to a negative value like the one for the red box.<br>
+<br>
+Change the margin of the blue box to -15px, so it fills the entire horizontal <br>
+width of the yellow box around it.<br>
+
+
+.red-box {<br>
+  background-color: crimson;<br>
+  color: #fff;<br>
+  padding: 20px;<br>
+  margin: -15px;<br>
+}<br>
+<br><br>
+In the above example this removed the yellow box completely.<br>
+<br>
+Add Different Padding to Each Side of an Element<br>
+Sometimes you will want to customize an element so that it has different <br>
+amounts of padding on each of its sides.<br>
+<br>
+CSS allows you to control the padding of all four individual sides of an element <br>
+with the padding-top, padding-right, padding-bottom, and padding-left properties.<br>
+<br>
+Add Different Margins to Each Side of an Element<br>
+Sometimes you will want to customize an element so that it has a different <br>
+margin on each of its sides.<br>
+<br>
+CSS allows you to control the margin of all four individual sides of an element<br> 
+with the margin-top, margin-right, margin-bottom, and margin-left properties.<br>
+<br>
+Use Clockwise Notation to Specify the Padding of an Element<br>
+<br>
+Instead of specifying an element's padding-top, padding-right, padding-bottom,<br> 
+and padding-left properties individually, you can specify them all in one line, like this:<br>
+<br>
+padding: 10px 20px 10px 20px;<br>
+<br>
+These four values work like a clodk:top, right, bottom, left and will produce the <br>
+exact same result as using the side-specific padding instructions.<br>
+
+.yellow-box {<br>
+  background-color: yellow;<br>
+  padding: 20px 40px 20px 40px;<br>
+}<br>
+<br>
+.red-box {<br>
+  background-color: crimson;<br>
+  color: #fff;<br>
+  padding: 20px 40px 20px 40px;<br>
+}<br>
+<br>
+.blue-box {<br>
+  background-color: blue;<br>
+  color: #fff;<br>
+  padding: 40px 20px 20px 40px;<br>
+}<br>
+<br>
+Use Clockwise Notation to Specify the Margin of an Element<br>
+Let's try this again, but with margin this time.<br>
+<br>
+Instead of specifying an element's margin-top, margin-right, margin-bottom,<br> 
+and margin-left properties individually, you can specify them all in one line, like this:<br>
+<br>
+margin: 10px 20px 10px 20px;<br>
+These four values work like a clock: top, right, bottom, left, and will produce <br>
+the exact same result as using the side-specific margin instructions.<br>
+<br>
+.blue-box {<br>
+  background-color: blue;<br>
+  color: #fff;<br>
+  margin: 40px 20px 20px 40px;<br>
+}<br>
+<br>
+Use Attribute Selectors to Style Elements<br>
+You have been adding id or class attributes to elements that you wish to <br>
+specifically style. These are known as ID and class selectors. There are other<br> 
+CSS Selectors you can use to select custom groups of elements to style.<br>
+<br>
+Let's bring out CatPhotoApp again to practice using CSS Selectors.<br>
+<br>
+For this challenge, you will use the [attr=value] attribute selector to style the <br>
+checkboxes in CatPhotoApp. This selector matches and styles elements with a specific <br>
+attribute value. For example, the below code changes the margins of all elements with<br> 
+the attribute type and a corresponding value of radio:<br>
+<br>
+[type='radio'] {<br>
+  margin: 20px 0px 20px 0px;<br>
+}<br>
+or:<br>
+<br>
+[type='checkbox'] {<br>
+  margin: 10px 0px 15px 0px<br>
+}<br>
+<br>
+refer to the code in style box for below example.<br>
+<br>
+</p>
+
+<form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label><br>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+</main>
+  
+  
   
 </main>
