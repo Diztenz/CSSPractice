@@ -10,7 +10,8 @@
   }
 </style>
 
-<p>Change the Color of Text<br>
+<h2>Change the Color of Text</h2>
+<p>
 Now let's change the color of some of our text.<br>
 <br>
 We can do this by changing the style of your h2 element.<br>
@@ -31,7 +32,9 @@ Note that it is a good practice to end inline style declarations with a ; .<br>
 
   <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-  <p>Use CSS Selectors to Style ElementsPassed
+  <h2>Use CSS Selectors to Style ElementsPassed</h2>
+  <p>
+
 With CSS, there are hundreds of CSS properties that you can use to change the way an element looks on your page.<br>
 <br>
 When you entered &lt;h2 style="color: red;">CatPhotoApp&lt;/h2>, you were styling that individual h2 element with inline CSS, which stands for Cascading Style Sheets.<br>
@@ -66,7 +69,8 @@ Note that it's important to have both opening and closing curly braces ({ and })
 
   <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-<p>Use a CSS Class to Style an ElementPassed<br>
+  <h2>Use a CSS Class to Style an ElementPassed</h2>
+<p>
 Classes are reusable styles that can be added to HTML elements.<br>
 <br>
 Here's an example CSS class declaration:<br>
@@ -91,7 +95,8 @@ You can see that we've created a CSS class called blue-text within the &lt;style
 
   <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-<p>Style Multiple Elements with a CSS Class<br>
+  <h2>Style Multiple Elements with a CSS Class</h2>
+<p>
 Classes allow you to use the same CSS styles on multiple HTML elements.<br> You can see this by applying your red-text class to the first p element.<br>
 
 &lt;style><br>
@@ -115,7 +120,8 @@ Classes allow you to use the same CSS styles on multiple HTML elements.<br> You 
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
-  <p>Change the Font Size of an Element<br>
+  <h2>Change the Font Size of an Element</h2>
+  <p>
 Font size is controlled by the font-size CSS property, like this:<br>
 <br>
 h1 {<br>
@@ -123,7 +129,8 @@ h1 {<br>
 }<br>
 </p>
 
-<p>Set the Font Family of an Element<br>
+<h2>Set the Font Family of an Element</h2>
+<p>
 You can set which font an element should use, by using the font-family property.<br>
 <br>
 For example, if you wanted to set your h2 element's font to sans-serif, you would use the following CSS:<br>
@@ -138,7 +145,8 @@ h2 {<br>
   }<br>
 </p>
 
-<p>Import a Google Font<br>
+<h2>Import a Google Font</h2>
+<p>
 In addition to specifying common fonts that are found on most operating systems, <br>
 we can also specify non-standard, custom web fonts for use on our website. <br>
 There are many sources for web fonts on the Internet. For this example we will <br>
@@ -208,9 +216,12 @@ Family names are case-sensitive and need to be wrapped in quotes if there is a s
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
   </form>
+
+  <h2>Specify How Fonts Should Degrade</h2>
     <p>
-    	Specify How Fonts Should Degrade<br>
-There are several default fonts that are available in all browsers. These generic font families include<br> monospace, serif and sans-serif<br>
+    	
+There are several default fonts that are available in all browsers. These generic font families include<br> 
+monospace, serif and sans-serif<br>
 <br>
 When one font isn't available, you can tell the browser to "degrade" to another font.<br>
 <br>
@@ -222,8 +233,9 @@ p {<br>
 <br>
 Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS <br>keywords.<br>
     </p>
+
+    <h2>Size Your Images</h2>
 <p>
-	Size Your Images<br>
 CSS has a property called width that controls an element's width. Just like with fonts, we'll use px<br>
 (pixels) to specify the image's width.<br>
 <br>
@@ -240,8 +252,10 @@ Makes the image smaller when the img is given the .smaller-image (.larger-image)
 
 </p>
 
+
+<h2>Add Borders Around Your Elements</h2>
 <p>
-  Add Borders Around Your Elements<br>
+  
 CSS borders have properties like style, color and width.<br>
 <br>
 For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:<br>
@@ -254,8 +268,9 @@ For example, if we wanted to create a red, 5 pixel border around an HTML element
     border-radius: 10px; You can add the border radius to multiple classes .thin-red-border or .smaller-image class<br>
   }<br>
   &lt;/style><br>
-  <br>
-  Add Rounded Corners with border-radius<br>
+</p>
+  <h2>Add Rounded Corners with border-radius</h2>
+  <p>
 Your cat photo currently has sharp corners. We can round out those corners with a CSS property called border-radius.<br>
 You can also give the image a circular border with border-radius: 50%; (or 60%, or 70%, etc.)<br>
 
@@ -284,7 +299,8 @@ class can have multiple classes:<br>
 
  <a href="#"><img class="smaller-image thick-blue-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
- <p>Give a Background Color to a div Element<br>
+ <h2>Give a Background Color to a div Element</h2>
+ <p>
   You can set an element's background color with the background-color property.<br>
   <br>
   For example, if you wanted an element's background color to be green, you'd put this within your style element:<br>
@@ -317,8 +333,10 @@ class can have multiple classes:<br>
     </ol>
 </div>
 
+
+<h2>Set the id of an Element</h2>
 <p>
-  Set the id of an Element<br>
+  
 In addition to classes, each HTML element can also have an id attribute.<br>
 <br>
 There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn <br>
@@ -331,21 +349,10 @@ Here's an example of how you give your h2 element the id of cat-photo-app:<br>
 <br>
 &lt;h2 id="cat-photo-app"><br>
 </p>
-Set the id of an Element<br>
-In addition to classes, each HTML element can also have an id attribute.<br>
-<br>
-There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn <br>
-that you can use them to select and modify specific elements with JavaScript.<br>
-<br>
-id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't <br>
-give more than one element the same id attribute.<br>
-<br>
-Here's an example of how you give your h2 element the id of cat-photo-app:<br>
-<br>
-&lt;h2 id="cat-photo-app"><br>
-</p>
+
+<h2>Use an id Attribute to Style an Element</h2>
 <p>
-  Use an id Attribute to Style an Element<br>
+  
   One cool thing about id attributes is that, like classes, you can style them using CSS.<br>
   <br>
   However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance)<br>
@@ -379,9 +386,9 @@ Here's an example of how you give your h2 element the id of cat-photo-app:<br>
 </form>
 
 
-
+<h2>Adjust the Padding of an Element</h2>
   <p>
-    Adjust the Padding of an Element<br>
+    
     <br>
 Now let's put our Cat Photo App away for a little while and learn more about styling HTML.<br>
 <br>
@@ -476,8 +483,9 @@ the text and the border around it.<br>
     <h5 class="box blue-box">padding</h5>
   </div>
 
+  <h2>Adjust the Margin of an Element</h2>
   <p>
-    Adjust the Margin of an Element<br>
+    
 <br>
 An element's margin controls the amount of space between an element's border and surrounding elements.<br>
 <br>
@@ -525,7 +533,7 @@ border and surrounding elements.<br>
   &lt;h5 class="box blue-box">padding&lt;/h5><br>
 &lt;/div><br>
 
-Add a Negative Margin to an Element<br>
+<h2>Add a Negative Margin to an Element</h2>
 <br>
 An element's margin controls the amount of space between an element's border and surrounding elements.<br>
 <br>
@@ -546,7 +554,7 @@ width of the yellow box around it.<br>
 <br><br>
 In the above example this removed the yellow box completely.<br>
 <br>
-Add Different Padding to Each Side of an Element<br>
+<h2>Add Different Padding to Each Side of an Element</h2>
 Sometimes you will want to customize an element so that it has different <br>
 amounts of padding on each of its sides.<br>
 <br>
@@ -586,8 +594,9 @@ exact same result as using the side-specific padding instructions.<br>
   color: #fff;<br>
   padding: 40px 20px 20px 40px;<br>
 }<br>
-<br>
-Use Clockwise Notation to Specify the Margin of an Element<br>
+<br></p>
+<h2>Use Clockwise Notation to Specify the Margin of an Element</h2>
+<p>
 Let's try this again, but with margin this time.<br>
 <br>
 Instead of specifying an element's margin-top, margin-right, margin-bottom,<br> 
@@ -603,7 +612,9 @@ the exact same result as using the side-specific margin instructions.<br>
   margin: 40px 20px 20px 40px;<br>
 }<br>
 <br>
-Use Attribute Selectors to Style Elements<br>
+</p>
+<h2>Use Attribute Selectors to Style Elements</h2>
+<p>
 You have been adding id or class attributes to elements that you wish to <br>
 specifically style. These are known as ID and class selectors. There are other<br> 
 CSS Selectors you can use to select custom groups of elements to style.<br>
@@ -628,6 +639,7 @@ refer to the code in style box for below example.<br>
 <br>
 </p>
 
+
 <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
   <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
   <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
@@ -638,6 +650,62 @@ refer to the code in style box for below example.<br>
   <button type="submit">Submit</button>
 </form>
 
+  <h2>Understand Absolute versus Relative Units</h2>
+<p>
+  The last several challenges all set an element's margin or padding with pixels (px). <br>
+  Pixels are a type of length unit, which is what tells the browser how to size or space <br>
+  an item. In addition to px, CSS has a number of different length unit options that you <br>
+  can use.<br>
+  <br>
+  The two main types of length units are absolute and relative. Absolute units tie to <br>
+  physical units of length. For example, in and mm refer to inches and millimeters, respectively. <br>
+  Absolute length units approximate the actual measurement on a screen, but there are some <br>
+  differences depending on a screen's resolution.<br>
+  <br>
+  Relative units, such as em or rem, are relative to another length value. For example, <br>
+  em is based on the size of an element's font. If you use it to set the font-size property <br>
+  itself, it's relative to the parent's font-size.<br>
+  <br>
+  Note: There are several relative unit options that are tied to the size of the viewport. <br>
+  They are covered in the Responsive Web Design Principles section.<br>
+<br>
+.red-box {<br>
+  background-color: red;<br>
+  margin: 20px 40px 20px 40px;<br>
+  padding: 1.5em;<br>
+<br>
+}<br>
+</p>
+
+<h2>Style the HTML Body Element</h2>
+  <p>
+Now let's start fresh and talk about CSS inheritance.<br>
+  <br>
+  Every HTML page has a body element.<br>
+  <br>
+  We can prove that the body element exists here by giving it a background-color of black.<br>
+  <br>
+  We can do this by adding the following to our style element:<br>
+  <br>
+  body {<br>
+    background-color: black;<br>
+  }<br>
+<br>
+  &lt;style><br>
+    <br>
+    body {<br>
+      background-color: green;<br>
+  <br>
+    }<br>
+  <br>
+    h1 {<br>
+  font-family: monospace;<br>
+  }<br>
+  <br>
+  &lt;/style><br>
+  <br>
+  &lt;h1>Hellow World&lt;/h1><br>
+</p>
 </main>
   
   
