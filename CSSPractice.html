@@ -9,6 +9,40 @@
     font-size: 16px;
   }
 </style>
+</head>
+
+<h2>Change weight of Text</h2>
+<p>
+  &lt;p style="font-weight: normal;">This font is normal.&lt;/p>  <br>  
+&lt;p style="font-weight: bold;">This font is bold.&lt;/p>    <br>
+&lt;p style="font-weight: lighter;">This font is lighter.&lt;/p> <br>   
+&lt;p style="font-weight: bolder;">This font is bolder.&lt;/p> <br>   
+&lt;p style="font-weight: 100;">This font is 100 weight.&lt;/p> <br>   
+&lt;p style="font-weight: 200;">This font is 200 weight.&lt;/p><br>    
+&lt;p style="font-weight: 300;">This font is 300 weight.&lt;/p> <br>   
+&lt;p style="font-weight: 400;">This font is 400 weight.&lt;/p> <br>   
+&lt;p style="font-weight: 500;">This font is 500 weight.&lt;/p><br>    
+&lt;p style="font-weight: 600;">This font is 600 weight.&lt;/p> <br>   
+&lt;p style="font-weight: 700;">This font is 700 weight.&lt;/p> <br>   
+&lt;p style="font-weight: 800;">This font is 800 weight.&lt;/p> <br>   
+&lt;p style="font-weight: 900;">This font is 900 weight.&lt;/p> <br>   
+   <br>
+</p>
+
+<p style="font-weight: normal;">This font is normal.</p>    
+<p style="font-weight: bold;">This font is bold.</p>    
+<p style="font-weight: lighter;">This font is lighter.</p>    
+<p style="font-weight: bolder;">This font is bolder.</p>    
+<p style="font-weight: 100;">This font is 100 weight.</p>    
+<p style="font-weight: 200;">This font is 200 weight.</p>    
+<p style="font-weight: 300;">This font is 300 weight.</p>    
+<p style="font-weight: 400;">This font is 400 weight.</p>    
+<p style="font-weight: 500;">This font is 500 weight.</p>    
+<p style="font-weight: 600;">This font is 600 weight.</p>    
+<p style="font-weight: 700;">This font is 700 weight.</p>    
+<p style="font-weight: 800;">This font is 800 weight.</p>    
+<p style="font-weight: 900;">This font is 900 weight.</p>    
+    
 
 <h2>Change the Color of Text</h2>
 <p>
@@ -27,7 +61,7 @@ Note that it is a good practice to end inline style declarations with a ; .<br>
 
 
 <h2 class="red-text">CatPhotoApp</h2>
-<main>
+
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
   <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
@@ -64,7 +98,7 @@ Note that it's important to have both opening and closing curly braces ({ and })
 </style>
 
 <h2>CatPhotoApp</h2>
-<main>
+
   <p>Click here to view more <a href="#">cat photos</a>.</p>
 
   <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
@@ -90,7 +124,7 @@ You can see that we've created a CSS class called blue-text within the &lt;style
 </style>
 
 <h2 class="red-text">CatPhotoApp</h2>
-<main>
+
   <p>Click here to view more <a href="#">cat photos</a>.</p>
 
   <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
@@ -117,7 +151,7 @@ Classes allow you to use the same CSS styles on multiple HTML elements.<br> You 
 </style>
 
 <h2 class="red-text">CatPhotoApp</h2>
-<main>
+
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
   <h2>Change the Font Size of an Element</h2>
@@ -190,7 +224,7 @@ Family names are case-sensitive and need to be wrapped in quotes if there is a s
 </style>
 
 <h2 class="red-text">CatPhotoApp</h2>
-<main>
+
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
   <div>
     <p>Things cats love:</p>
@@ -706,8 +740,1133 @@ Now let's start fresh and talk about CSS inheritance.<br>
   <br>
   &lt;h1>Hellow World&lt;/h1><br>
 </p>
+<h2>
+  Inherit Styles from the Body Element
+</h2>
+<p>
+  Now we've proven that every HTML page has a body element, and that its body element can also be styled with CSS.   <br>               
+<br>
+Remember, you can style your body element just like any other HTML element, and all your other elements will inherit your body element's styles.<br>
+<br>
+First, create a h1 element with the text Hello World<br>
+<br>
+Then, let's give all elements on your page the color of green by adding color: green; to your body element's style declaration.<br>
+<br>
+Finally, give your body element the font-family of monospace by adding font-family: monospace; to your body element's style declaration.<br>
+<br>
+&lt;style><br>
+<br>
+  body {<br>
+    background-color: black;<br>
+    color: green;<br>
+    font-family: monospace;<br>
+  }<br>
+<br>
+&lt;/style><br>
+<br>
+&lt;h1>Hello World</h1><br>
+<br>
+*****add an inner html image of the screen shot from the freecodecamp page here please.  *****
+</p>
+<img src="Sample1.png">
+
+<h2>Prioritize One Style Over Another</h2>
+<br>
+Sometimes your HTML elements will receive multiple styles that conflict with one another.<br>
+<br>
+For example, your h1 element can't be both green and pink at the same time.<br>
+<br>
+Let's see what happens when we create a class that makes text pink, then apply it to an element. <br>
+Will our class override the body element's color: green; CSS property?<br>
+<br>
+
+<br>
+&lt;style>
+  body {<br>
+    background-color: black;<br>
+    font-family: monospace;<br>
+    color: green;<br>
+  }<br>
+  .pink-text {<br>
+    color: pink;<br>
+  }<br>
+&lt;/style><br>
+&lt;h1 class="pink-text">Hello World!&lt;/h1><br>
+<br>
+<img src="sample2.png">
+
+<h2>Override Styles in Subsequent CSS</h2>
+<p>
+Our pink-text class overrode our body element's CSS declaration!<br>
+<br>
+We just proved that our classes will override the body element's CSS. <br>
+So the next logical question is, what can we do to override our pink-text class?<br>
+<br>
+Create an additional CSS class called blue-text that gives an element the color blue. Make sure it's below your pink-text class declaration.<br>
+<br>
+Apply the blue-text class to your h1 element in addition to your pink-text class, and let's see which one wins.<br>
+<br>
+Applying multiple class attributes to a HTML element is done with a space between them like this:<br>
+<br>
+class="class1 class2"<br>
+<br>
+Note: It doesn't matter which order the classes are listed in the HTML element.<br>
+<br>
+However, the order of the class declarations in the &lt;style> section is what is important. <br>
+The second declaration will always take precedence over the first. Because .blue-text is declared second,<br> 
+it overrides the attributes of .pink-text<br>
+<br>
+&lt;style><br>
+  body {<br>
+    background-color: black;<br>
+    font-family: monospace;<br>
+    color: green;<br>
+  }<br>
+  <br>
+  .pink-text {<br>
+    color: pink;<br>
+  }<br>
+  .blue-text {<br>
+    color: blue;<br>
+  }<br>
+  <br>
+&lt;/style><br>
+&lt;h1 class="pink-text blue-text">Hello World!&lt;/h1><br>
+<br>
+</p>
+
+<img src="sample3.png">
+
+<h2>Override Class Declarations by Styling ID Attributes</h2>
+<p>
+We just proved that browsers read CSS from top to bottom in order of their declaration. <br>
+That means that, in the event of a conflict, the browser will use whichever CSS declaration came last. <br>
+Notice that if we even had put blue-text before pink-text in our h1 element's classes, <br>
+it would still look at the declaration order and not the order of their use!<br>
+<br>
+But we're not done yet. There are other ways that you can override CSS.<br> 
+Do you remember id attributes?<br>
+<br>
+Let's override your pink-text and blue-text classes, and make your h1 element orange, <br>
+by giving the h1 element an id and then styling that id.<br>
+<br>
+Give your h1 element the id attribute of orange-text. Remember, <br>
+id styles look like this:<br>
+<br>
+&lt;h1 id="orange-text"><br>
+Leave the blue-text and pink-text classes on your h1 element.<br>
+<br>
+Create a CSS declaration for your orange-text id in your style element. <br>
+Here's an example of what this looks like:<br>
+<br>
+#brown-text {<br>
+  color: brown;<br>
+}<br>
+Note: It doesn't matter whether you declare this CSS above or below pink-text class, <br>
+since the id attribute will always take precedence.<br>
+<br>
+&lt;style><br>
+  body {<br>
+    background-color: black;<br>
+    font-family: monospace;<br>
+    color: green;<br>
+  }<br>
+  .pink-text {<br>
+    color: pink;<br>
+  }<br>
+  .blue-text {<br>
+    color: blue;<br>
+  }<br>
+  #orange-text {<br>
+    color: orange;<br>
+  }<br>
+&lt;/style><br>
+&lt;h1 id="orange-text" class="blue-text pink-text orange-text">Hello World!&lt;/h1><br>
+<br>
+</p>
+<img src="sample4.png">
+
+
+<h2>Override Class Declarations with Inline Styles</h2>
+
+<p>
+<br>
+So we've proven that id declarations override class declarations, regardless of where they are declared in your style element CSS.<br>
+<br>
+There are other ways that you can override CSS. Do you remember inline styles?<br>
+<br>
+Use an inline style to try to make our h1 element white. Remember, in line styles look like this:<br>
+<br>
+&lt;h1 style="color: green;"><br>
+Leave the blue-text and pink-text classes on your h1 element.<br>
+<br>
+So we've proven that id declarations override class declarations, regardless of where they are declared in your style element CSS.<br>
+<br>
+There are other ways that you can override CSS. Do you remember inline styles?<br>
+<br>
+Use an inline style to try to make our h1 element white. Remember, in line styles look like this:<br>
+<br>
+&lt;h1 style="color: green;"><br>
+Leave the blue-text and pink-text classes on your h1 element.<br>
+&lt;style><br>
+  body {<br>
+    background-color: black;<br>
+    font-family: monospace;<br>
+    color: green;<br>
+  }<br>
+  #orange-text {<br>
+    color: orange;<br>
+  }<br>
+  .pink-text {<br>
+    color: pink;<br>
+  }<br>
+  .blue-text {<br>
+    color: blue;<br>
+  }<br>
+&lt;/style><br>
+&lt;h1 style="color: white;" id="orange-text" class="pink-text blue-text">Hello World!&lt;/h1><br>
+</p>
+<img src="sample5.png">
+
+<h2>Override All Other Styles by using Important !important</h2>
+
+<p>
+  Yay! We just proved that inline styles will override all the CSS declarations in your style element.<br>
+<br>
+  But wait. There's one last way to override CSS. This is the most powerful method of all. But before we do it, <br>
+  let's talk about why you would ever want to override CSS.<br>
+  <br>
+  In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you <br>
+  absolutely need to be sure that an element has specific CSS, you can use !important.<br>
+  <br>
+  Let's go all the way back to our pink-text class declaration. Remember that our pink-text class was <br>
+  overridden by subsequent class declarations, id declarations, and inline styles.<br>
+  <br>
+  Let's add the keyword !important to your pink-text element's color declaration to make 100% <br>
+  sure that your h1 element will be pink.<br>
+  <br>
+  An example of how to do this is:<br>
+  <br>
+  color: red !important;<br>
+<br>
+&lt;style><br>
+  body {<br>
+    background-color: black;<br>
+    font-family: monospace;<br>
+    color: green;<br>
+  }<br>
+  #orange-text {<br>
+    color: orange;<br>
+  }<br>
+  .pink-text {<br>
+    color: pink !important;<br>
+  }<br>
+  .blue-text {<br>
+    color: blue;<br>
+  }<br>
+&lt;/style><br>
+&lt;h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!&lt;/h1><br>
+</p>
+
+<img src="sample6.png">
+
+<h2>Use Hex Code for Specific Colors</h2>
+
+<p>
+  Did you know there are other ways to represent colors in CSS? One of these ways is called hexadecimal code, <br>
+  or hex code for short.<br>
+<br>
+We usually use decimals, or base 10 numbers, which use the symbols 0 to 9 for each digit. Hexadecimals (or hex) <br>
+are base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 represent the <br>
+values zero to nine. Then A,B,C,D,E,F represent the values ten to fifteen. Altogether, 0 to F can represent a digit <br>
+in hexadecimal, giving us 16 total possible values. <br>
+You can find more information about <a href="https://en.wikipedia.org/wiki/Hexadecimal">hexadecimal numbers here.</a><br>
+<br>
+In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B)<br> 
+components. For example, #000000 is black and is also the lowest possible value. You can find more information about <br>
+the <a href="https://en.wikipedia.org/wiki/RGB_color_model">RGB color system here</a>.<br>
+<br>
+body {<br>
+  color: #000000;<br>
+}<br>
+</p>
+
+<h2>Use Hex Code to Mix Colors</h2>
+
+<p>
+  To review, hex codes use 6 hexadecimal digits to represent colors, two each for red (R), green (G), and blue (B) components.<br>
+<br>
+From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!<br>
+<br>
+For example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being #FFA500.<br>
+<br>
+The digit 0 is the lowest number in hex code, and represents a complete absence of color.<br>
+<br>
+The digit F is the highest number in hex code, and represents the maximum possible brightness.<br>
+<br>
+Color	Hex Code<br>
+Dodger Blue	#1E90FF<br>
+Green	#00FF00<br>
+Orange	#FFA500<br>
+Red	#FF0000<br>
+
+&lt;style><br>
+  .red-text {<br>
+    color: #FF0000;<br>
+  }<br>
+  .green-text {<br>
+    color: #00FF00;<br>
+  }<br>
+  .dodger-blue-text {<br>
+    color: #1E90FF;<br>
+  }<br>
+  .orange-text {<br>
+    color: #FFA500;<br>
+  }<br>
+&lt;/style><br>
+<br>
+&lt;h1 class="red-text">I am red!&lt;/h1><br>
+<br>
+&lt;h1 class="green-text">I am green!&lt;/h1><br>
+<br>
+&lt;h1 class="dodger-blue-text">I am dodger blue!&lt;/h1><br>
+<br>
+&lt;h1 class="orange-text">I am orange!&lt;/h1><br>
+</p>
+<img src="sample7.png">
+
+<h2>Use Abbreviated Hex Code</h2>
+<p>
+  Many people feel overwhelmed by the possibilities of more than 16 million colors. <br>
+  And it's difficult to remember hex code. Fortunately, you can shorten it.<br>
+<br>
+For example, red's hex code #FF0000 can be shortened to #F00. This shortened form gives <br>
+one digit for red, one digit for green, and one digit for blue.<br>
+<br>
+This reduces the total number of possible colors to around 4,000. But browsers will interpret <br>
+#FF0000 and #F00 as exactly the same color.<br>
+<br>
+&lt;style><br>
+  .red-text {<br>
+    color: #F00;<br>
+  }<br>
+  .fuchsia-text {<br>
+    color: #F0F;<br>
+  }<br>
+  .cyan-text {<br>
+    color: #0FF;<br>
+  }<br>
+  .green-text {<br>
+    color: #0F0;<br>
+  }<br>
+&lt;/style><br>
+<br>
+&lt;h1 class="red-text">I am red!&lt;/h1><br>
+<br>
+&lt;h1 class="fuchsia-text">I am fuchsia!&lt;/h1><br>
+<br>
+&lt;h1 class="cyan-text">I am cyan!&lt;/h1><br>
+<br>
+&lt;h1 class="green-text">I am green!&lt;/h1><br>
+</p>
+<img src="sample8.png">
+
+<h2>Use RGB values to Color Elements</h2>
+
+<p>
+Another way you can represent colors in CSS is by using RGB values.<br>
+<br>
+The RGB value for black looks like this:<br>
+<br>
+rgb(0, 0, 0)<br>
+The RGB value for white looks like this:<br>
+<br>
+rgb(255, 255, 255)<br>
+Instead of using six hexadecimal digits like you do with hex code, with RGB you specify <br>
+the brightness of each color with a number between 0 and 255.<br>
+<br>
+If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. <br>
+So RGB, which starts counting from zero, has the exact same number of possible values as hex code.<br>
+<br>
+Here's an example of how you'd change the body background to orange using its RGB code.<br>
+<br>
+body {<br>
+  background-color: rgb(255, 165, 0);<br>
+}<br>
+<br>
+&lt;style><br>
+  body {<br>
+    background-color: rgb(0, 0, 0); "this would provide black background"<br>
+  }<br>
+&lt;/style><br>
+<br>
+&lt;style>
+  body {<br>
+    background-color: rgb(77, 78, 148);<br>
+  }<br>
+&lt;/style><br>
+</p>
+<img src="sample9.png">
+
+<h2>Use RGB to Mix Colors</h2>
+
+<p>
+  Just like with hex code, you can mix colors in RGB by using combinations of different values.
+
+  &lt;style><br>
+    .red-text {<br>
+      color: rgb(255, 0, 0);<br>
+    }<br>
+    .orchid-text {<br>
+      color: rgb(218, 112, 214);<br>
+    }<br>
+    .sienna-text {<br>
+      color: rgb(160, 82, 45);<br>
+    }<br>
+    .blue-text {<br>
+      color: rgb(0, 0, 255);<br>
+    }<br>
+  &lt;/style><br>
+  <br>
+  &lt;h1 class="red-text">I am red!&lt;/h1><br>
+  <br>
+  &lt;h1 class="orchid-text">I am orchid!&lt;/h1><br>
+  <br>
+  &lt;h1 class="sienna-text">I am sienna!&lt;/h1><br>
+  <br>
+  &lt;h1 class="blue-text">I am blue!&lt;/h1><br>
+
+</p>
+<img src="sample10.png">
+
+<h2>Use CSS Variables to change several elements at once</h2>
+<p>
+  CSS Variables are a powerful way to change many CSS style properties at once by changing only one value.<br>
+<br>
+Follow the instructions below to see how changing just three values can change the styling of many elements.<br>
+<br>
+In the penguin class, change the black value to gray, the gray value to white, and the yellow value to orange.<br>
+<br>
+&lt;style><br>
+  .penguin {<br>
+<br>
+    /* Only change code below this line */<br>
+    --penguin-skin: black;<br>
+    --penguin-belly: gray;<br>
+    --penguin-beak: yellow;<br>
+    /* Only change code above this line */<br>
+<br>
+    position: relative;<br>
+    margin: auto;<br>
+    display: block;<br>
+    margin-top: 5%;<br>
+    width: 300px;<br>
+    height: 300px;<br>
+  }<br>
+<br>
+  .penguin-top {<br>
+    top: 10%;<br>
+    left: 25%;<br>
+    background: var(--penguin-skin, gray);<br>
+    width: 50%;<br>
+    height: 45%;<br>
+    border-radius: 70% 70% 60% 60%;<br>
+  }<br>
+<br>
+  .penguin-bottom {<br>
+    top: 40%;<br>
+    left: 23.5%;<br>
+    background: var(--penguin-skin, gray);<br>
+    width: 53%;<br>
+    height: 45%;<br>
+    border-radius: 70% 70% 100% 100%;<br>
+  }<br>
+<br>
+  .right-hand {<br>
+    top: 0%;<br>
+    left: -5%;<br>
+    background: var(--penguin-skin, gray);<br>
+    width: 30%;<br>
+    height: 60%;<br>
+    border-radius: 30% 30% 120% 30%;<br>
+    transform: rotate(45deg);<br>
+    z-index: -1;<br>
+  }<br>
+<br>
+  .left-hand {<br>
+    top: 0%;<br>
+    left: 75%;<br>
+    background: var(--penguin-skin, gray);<br>
+    width: 30%;<br>
+    height: 60%;<br>
+    border-radius: 30% 30% 30% 120%;<br>
+    transform: rotate(-45deg);<br>
+    z-index: -1;<br>
+  }<br>
+<br>
+  .right-cheek {<br>
+    top: 15%;<br>
+    left: 35%;<br>
+    background: var(--penguin-belly, white);<br>
+    width: 60%;<br>
+    height: 70%;<br>
+    border-radius: 70% 70% 60% 60%;<br>
+  }<br>
+<br>
+  .left-cheek {<br>
+    top: 15%;<br>
+    left: 5%;<br>
+    background: var(--penguin-belly, white);<br>
+    width: 60%;<br>
+    height: 70%;<br>
+    border-radius: 70% 70% 60% 60%;<br>
+  }<br>
+<br>
+  .belly {<br>
+    top: 60%;<br>
+    left: 2.5%;<br>
+    background: var(--penguin-belly, white);<br>
+    width: 95%;<br>
+    height: 100%;<br>
+    border-radius: 120% 120% 100% 100%;<br>
+  }<br>
+<br>
+  .right-feet {<br>
+    top: 85%;<br>
+    left: 60%;<br>
+    background: var(--penguin-beak, orange);<br>
+    width: 15%;<br>
+    height: 30%;<br>
+    border-radius: 50% 50% 50% 50%;<br>
+    transform: rotate(-80deg);<br>
+    z-index: -2222;<br>
+  }<br>
+<br>
+  .left-feet {<br>
+    top: 85%;<br>
+    left: 25%;<br>
+    background: var(--penguin-beak, orange);<br>
+    width: 15%;<br>
+    height: 30%;<br>
+    border-radius: 50% 50% 50% 50%;<br>
+    transform: rotate(80deg);<br>
+    z-index: -2222;<br>
+  }<br>
+<br>
+  .right-eye {<br>
+    top: 45%;<br>
+    left: 60%;<br>
+    background: black;<br>
+    width: 15%;<br>
+    height: 17%;<br>
+    border-radius: 50%;<br>
+  }<br>
+<br>
+  .left-eye {<br>
+    top: 45%;<br>
+    left: 25%;<br>
+    background: black;<br>
+    width: 15%;<br>
+    height: 17%;<br>
+    border-radius: 50%;<br>
+  }<br>
+<br>
+  .sparkle {<br>
+    top: 25%;<br>
+    left: 15%;<br>
+    background: white;<br>
+    width: 35%;<br>
+    height: 35%;<br>
+    border-radius: 50%;<br>
+  }<br>
+<br>
+  .blush-right {<br>
+    top: 65%;<br>
+    left: 15%;<br>
+    background: pink;<br>
+    width: 15%;<br>
+    height: 10%;<br>
+    border-radius: 50%;<br>
+  }<br>
+<br>
+  .blush-left {<br>
+    top: 65%;<br>
+    left: 70%;<br>
+    background: pink;<br>
+    width: 15%;<br>
+    height: 10%;<br>
+    border-radius: 50%;<br>
+  }<br>
+<br>
+  .beak-top {<br>
+    top: 60%;<br>
+    left: 40%;<br>
+    background: var(--penguin-beak, orange);<br>
+    width: 20%;<br>
+    height: 10%;<br>
+    border-radius: 50%;<br>
+  }<br>
+<br>
+  .beak-bottom {<br>
+    top: 65%;<br>
+    left: 42%;<br>
+    background: var(--penguin-beak, orange);<br>
+    width: 16%;<br>
+    height: 10%;<br>
+    border-radius: 50%;<br>
+  }<br>
+<br>
+  body {<br>
+    background:#c6faf1;<br>
+  }<br>
+<br>
+  .penguin * {<br>
+    position: absolute;<br>
+  }<br>
+&lt;/style><br>
+&lt;div class="penguin"><br>
+  &lt;div class="penguin-bottom"><br>
+    &lt;div class="right-hand">&lt;/div><br>
+    &lt;div class="left-hand">&lt;/div><br>
+    &lt;div class="right-feet">&lt;/div><br>
+    &lt;div class="left-feet">&lt;/div><br>
+  &lt;/div><br>
+  &lt;div class="penguin-top"><br>
+    &lt;div class="right-cheek"&lt;</div><br>
+    &lt;div class="left-cheek">&lt;/div><br>
+    &lt;div class="belly">&lt;/div><br>
+    &lt;div class="right-eye"><br>
+      &lt;div class="sparkle">&lt;/div><br>
+    &lt;/div><br>
+    &lt;div class="left-eye"><br>
+      &lt;div class="sparkle">&lt;/div><br>
+    &lt;/div><br>
+    &lt;div class="blush-right">&lt;/div><br>
+    &lt;div class="blush-left">&lt;/div><br>
+    &lt;div class="beak-top">&lt;/div><br>
+    &lt;div class="beak-bottom">&lt;/div><br>
+  </div><br>
+&lt;/div><br>
+<br>
+The sample above gives us below pic.<br>
+
+</p>
+<img src="sample11.png">
+
+<p>
+  &lt;style><br>
+  .red-text {<br>
+    color: rgb(255, 0, 0);<br>
+  }<br>
+  .orchid-text {<br>
+    color: rgb(218, 112, 214);<br>
+  }<br>
+  .sienna-text {<br>
+    color: rgb(160, 82, 45);<br>
+  }<br>
+  .blue-text {<br>
+    color: rgb(0, 0, 255);<br>
+  }<br>
+&lt;/style><br>
+<br>
+&lt;h1 class="red-text">I am red!&lt;/h1><br>
+<br>
+&lt;h1 class="orchid-text">I am orchid!&lt;/h1><br>
+<br>
+&lt;h1 class="sienna-text">I am sienna!&lt;/h1><br>
+<br>
+&lt;h1 class="blue-text">I am blue!&lt;/h1><br>
+
+</p>
+<img src="sample10.png">
+
+<h2>Use CSS Variables to change several elements at once</h2>
+<p>
+CSS Variables are a powerful way to change many CSS style properties at once by changing only one value.<br>
+<br>
+Follow the instructions below to see how changing just three values can change the styling of many elements.<br>
+<br>
+In the penguin class, change the black value to gray, the gray value to white, and the yellow value to orange.<br>
+<br>
+&lt;style><br>
+.penguin {<br>
+<br>
+  /* Only change code below this line */<br>
+  --penguin-skin: gray;<br>
+  --penguin-belly: white;<br>
+  --penguin-beak: orange;<br>
+  /* Only change code above this line */<br>
+<br>
+  position: relative;<br>
+  margin: auto;<br>
+  display: block;<br>
+  margin-top: 5%;<br>
+  width: 300px;<br>
+  height: 300px;<br>
+}<br>
+<br>
+.penguin-top {<br>
+  top: 10%;<br>
+  left: 25%;<br>
+  background: var(--penguin-skin, gray);<br>
+  width: 50%;<br>
+  height: 45%;<br>
+  border-radius: 70% 70% 60% 60%;<br>
+}<br>
+<br>
+.penguin-bottom {<br>
+  top: 40%;<br>
+  left: 23.5%;<br>
+  background: var(--penguin-skin, gray);<br>
+  width: 53%;<br>
+  height: 45%;<br>
+  border-radius: 70% 70% 100% 100%;<br>
+}<br>
+<br>
+.right-hand {<br>
+  top: 0%;<br>
+  left: -5%;<br>
+  background: var(--penguin-skin, gray);<br>
+  width: 30%;<br>
+  height: 60%;<br>
+  border-radius: 30% 30% 120% 30%;<br>
+  transform: rotate(45deg);<br>
+  z-index: -1;<br>
+}<br>
+<br>
+.left-hand {<br>
+  top: 0%;<br>
+  left: 75%;<br>
+  background: var(--penguin-skin, gray);<br>
+  width: 30%;<br>
+  height: 60%;<br>
+  border-radius: 30% 30% 30% 120%;<br>
+  transform: rotate(-45deg);<br>
+  z-index: -1;<br>
+}<br>
+<br>
+.right-cheek {<br>
+  top: 15%;<br>
+  left: 35%;<br>
+  background: var(--penguin-belly, white);<br>
+  width: 60%;<br>
+  height: 70%;<br>
+  border-radius: 70% 70% 60% 60%;<br>
+}<br>
+<br>
+.left-cheek {<br>
+  top: 15%;<br>
+  left: 5%;<br>
+  background: var(--penguin-belly, white);<br>
+  width: 60%;<br>
+  height: 70%;<br>
+  border-radius: 70% 70% 60% 60%;<br>
+}<br>
+<br>
+.belly {<br>
+  top: 60%;<br>
+  left: 2.5%;<br>
+  background: var(--penguin-belly, white);<br>
+  width: 95%;<br>
+  height: 100%;<br>
+  border-radius: 120% 120% 100% 100%;<br>
+}<br>
+<br>
+.right-feet {<br>
+  top: 85%;<br>
+  left: 60%;<br>
+  background: var(--penguin-beak, orange);<br>
+  width: 15%;<br>
+  height: 30%;<br>
+  border-radius: 50% 50% 50% 50%;<br>
+  transform: rotate(-80deg);<br>
+  z-index: -2222;<br>
+}<br>
+<br>
+.left-feet {<br>
+  top: 85%;<br>
+  left: 25%;<br>
+  background: var(--penguin-beak, orange);<br>
+  width: 15%;<br>
+  height: 30%;<br>
+  border-radius: 50% 50% 50% 50%;<br>
+  transform: rotate(80deg);<br>
+  z-index: -2222;<br>
+}<br>
+<br>
+.right-eye {<br>
+  top: 45%;<br>
+  left: 60%;<br>
+  background: black;<br>
+  width: 15%;<br>
+  height: 17%;<br>
+  border-radius: 50%;<br>
+}<br>
+<br>
+.left-eye {<br>
+  top: 45%;<br>
+  left: 25%;<br>
+  background: black;<br>
+  width: 15%;<br>
+  height: 17%;<br>
+  border-radius: 50%;<br>
+}<br>
+<br>
+.sparkle {<br>
+  top: 25%;<br>
+  left: 15%;<br>
+  background: white;<br>
+  width: 35%;<br>
+  height: 35%;<br>
+  border-radius: 50%;<br>
+}<br>
+<br>
+.blush-right {<br>
+  top: 65%;<br>
+  left: 15%;<br>
+  background: pink;<br>
+  width: 15%;<br>
+  height: 10%;<br>
+  border-radius: 50%;<br>
+}<br>
+<br>
+.blush-left {<br>
+  top: 65%;<br>
+  left: 70%;<br>
+  background: pink;<br>
+  width: 15%;<br>
+  height: 10%;<br>
+  border-radius: 50%;<br>
+}<br>
+<br>
+.beak-top {<br>
+  top: 60%;<br>
+  left: 40%;<br>
+  background: var(--penguin-beak, orange);<br>
+  width: 20%;<br>
+  height: 10%;<br>
+  border-radius: 50%;<br>
+}<br>
+<br>
+.beak-bottom {<br>
+  top: 65%;<br>
+  left: 42%;<br>
+  background: var(--penguin-beak, orange);<br>
+  width: 16%;<br>
+  height: 10%;<br>
+  border-radius: 50%;<br>
+}<br>
+<br>
+body {<br>
+  background:#c6faf1;<br>
+}<br>
+<br>
+.penguin * {<br>
+  position: absolute;<br>
+}<br>
+&lt;/style><br>
+&lt;div class="penguin"><br>
+&lt;div class="penguin-bottom"><br>
+  &lt;div class="right-hand">&lt;/div><br>
+  &lt;div class="left-hand">&lt;/div><br>
+  &lt;div class="right-feet">&lt;/div><br>
+  &lt;div class="left-feet">&lt;/div><br>
+&lt;/div><br>
+&lt;div class="penguin-top"><br>
+  &lt;div class="right-cheek"&lt;</div><br>
+  &lt;div class="left-cheek">&lt;/div><br>
+  &lt;div class="belly">&lt;/div><br>
+  &lt;div class="right-eye"><br>
+    &lt;div class="sparkle">&lt;/div><br>
+  &lt;/div><br>
+  &lt;div class="left-eye"><br>
+    &lt;div class="sparkle">&lt;/div><br>
+  &lt;/div><br>
+  &lt;div class="blush-right">&lt;/div><br>
+  &lt;div class="blush-left">&lt;/div><br>
+  &lt;div class="beak-top">&lt;/div><br>
+  &lt;div class="beak-bottom">&lt;/div><br>
+</div><br>
+&lt;/div><br>
+<br>
+Gives us below.
+</p>
+<img src="sample12.png">
+<h2>Create a custom CSS Variable</h2>
+<p>
+  To create a CSS variable, you just need to give it a name with two hyphens <br>
+  in front of it and assign it a value like this:<br>
+<br>
+--penguin-skin: gray;<br>
+<br>
+This will create a variable named --penguin-skin and assign it the value of gray. <br>
+Now you can use that variable elsewhere in your CSS to change the value of other elements to gray.<br>
+<br>
+In the penguin class, create a variable name --penguin-skin and give it a value of gray.<br>
+<br>
+</p>
+<h2>Use a custom CSS VariablePassed</h2>
+<br>
+<p>
+  After you create your variable, you can assign its value to other CSS properties by <br>
+  referencing the name you gave it.<br>
+<br>
+background: var(--penguin-skin);<br>
+This will change the background of whatever element you are targeting to gray because that is <br>
+the value of the --penguin-skin variable. Note that styles will not be applied unless the variable <br>
+names are an exact match.<br>
+<br>
+Apply the --penguin-skin variable to the background property of the penguin-top, penguin-bottom, <br>
+right-hand and left-hand classes.<br>
+<br>
+&lt;style><br>
+  .penguin {<br>
+    --penguin-skin: gray;<br>
+    position: relative;<br>
+    margin: auto;<br>
+    display: block;<br>
+    margin-top: 5%;<br>
+    width: 300px;<br>
+    height: 300px;<br>
+  }<br>
+<br>
+  .penguin-top {<br>
+    top: 10%;<br>
+    left: 25%;<br>
+<br>
+    /* Change code below this line */<br>
+    background: var(--penguin-skin);<br>
+    /* Change code above this line */<br>
+<br>
+    width: 50%;<br>
+    height: 45%;<br>
+    border-radius: 70% 70% 60% 60%;<br>
+  }<br>
+<br>
+  .penguin-bottom {<br>
+    top: 40%;<br>
+    left: 23.5%;<br>
+<br>
+    /* Change code below this line */<br>
+    background: var(--penguin-skin);<br>
+    /* Change code above this line */<br>
+<br>
+    width: 53%;<br>
+    height: 45%;<br>
+    border-radius: 70% 70% 100% 100%;<br>
+  }<br>
+<br>
+  .right-hand {<br>
+    top: 0%;<br>
+    left: -5%;<br>
+<br>
+    /* Change code below this line */<br>
+    background: var(--penguin-skin);<br>
+    /* Change code above this line */<br>
+<br>
+    width: 30%;<br>
+    height: 60%;<br>
+    border-radius: 30% 30% 120% 30%;<br>
+    transform: rotate(45deg);<br>
+    z-index: -1;<br>
+  }<br>
+<br>
+  .left-hand {<br>
+    top: 0%;<br>
+    left: 75%;<br>
+<br>
+    /* Change code below this line */<br>
+    background: var(--penguin-skin);<br>
+    /* Change code above this line */<br>
+<br>
+    width: 30%;<br>
+    height: 60%;<br>
+    border-radius: 30% 30% 30% 120%;<br>
+    transform: rotate(-45deg);<br>
+    z-index: -1;<br>
+  }<br>
+  &lt;/style><br>
+</p>
+<img src="sample13.png">
+
+<h2>Attach a Fallback value to a CSS Variable</h2>
+<p>
+  When using your variable as a CSS property value, you can attach a<br> 
+  fallback value that your browser will revert to if the given variable is invalid.<br>
+<br>
+Note: This fallback is not used to increase browser compatibility, and it will not work <br>
+on IE browsers. Rather, it is used so that the browser has a color to display if it <br>
+cannot find your variable.<br>
+<br>
+Here's how you do it:<br>
+<br>
+background: var(--penguin-skin, black);<br>
+<br>
+This will set background to black if your variable wasn't set. Note that this can be useful for debugging.<br>
+<br>
+It looks like there is a problem with the variables supplied to the<br>
+.penguin-top and .penguin-bottom classes. Rather than fix the<br>
+typo, add a fallback value of black to the background property of the .penguin-top and .penguin-bottom classes.<br>
+<br>
+.penguin-top {<br>
+  top: 10%;<br>
+  left: 25%;<br>
+<br>
+  /* Change code below this line */<br>
+  background: var(--pengiun-skin, black);<br>
+  /* Change code above this line */<br>
+<br>
+  width: 50%;<br>
+  height: 45%;<br>
+  border-radius: 70% 70% 60% 60%;<br>
+}<br>
+<br>
+.penguin-bottom {<br>
+  top: 40%;<br>
+  left: 23.5%;<br>
+<br>
+  /* Change code below this line */<br>
+  background: var(--pengiun-skin, black);<br>
+  /* Change code above this line */<br>
+<br>
+  width: 53%;<br>
+  height: 45%;<br>
+  border-radius: 70% 70% 100% 100%;<br>
+}<br>
+<br>
+This means that if you do want to provide a browser fallback, it's as<br>
+easy as providing another more widely supported value<br>
+immediately before your declaration. That way an older browser<br>
+will have something to fall back on, while a newer browser will just<br>
+interpret whatever declaration comes later in the cascade.<br>
+<br>
+It looks like a variable is being used to set the background color of<br>
+the .red-box class. Let's improve our browser compatibility by<br>
+adding another background declaration right before the existing<br>
+declaration and set its value to red.<br>
+<br>
+&lt;style><br>
+  :root {<br>
+    --red-color: red;<br>
+  }<br>
+  .red-box {<br>
+    background: red;<br>
+    background: var(--red-color);<br>
+    height: 200px;<br>
+    width:200px;<br>
+  }<br>
+&lt;/style><br>
+&lt;div class="red-box">&lt;/div><br>
+</p>
+<h2>Inherit CSS Variables</h2>
+<p>
+  When you create a variable, it is available for you to use inside the selector in which you create it. <br>
+  It also is available in any of that selector's descendants. This happens because CSS variables are inherited,<br> 
+  just like ordinary properties.<br>
+<br>
+To make use of inheritance, CSS variables are often defined in the :root element.<br>
+<br>
+:root is a pseudo-class selector that matches the root element of the document, usually the html element.<br> 
+By creating your variables in :root, they will be available globally and can be accessed from any other <br>
+selector in the style sheet.<br>
+<br>
+Define a variable named --penguin-belly in the :root selector and give it the value of pink.<br> 
+You can then see that the variable is inherited and that all the child elements which use it get pink backgrounds.<br>
+<br>
+&lt;style><br>
+  :root {<br>
+    /* Only change code below this line */<br>
+    --penguin-belly: pink;<br>
+    /* Only change code above this line */<br>
+  }<br>
+<br>
+  body {<br>
+    background: var(--penguin-belly, #c6faf1);<br>
+  }<br>
+<br>
+  .penguin {<br>
+    --penguin-skin: gray;<br>
+    --penguin-beak: orange;<br>
+    position: relative;<br>
+    margin: auto;<br>
+    display: block;<br>
+    margin-top: 5%;<br>
+    width: 300px;<br>
+    height: 300px;<br>
+  }<br>
+  &lt;/style><br>
+  <br>
+</p>
+<img src="sample14.png">
+
+<h2>Change a variable for a specific area</h2>
+<p>
+  When you create your variables in :root they will set the value of that variable for the whole page.<br>
+<br>
+You can then over-write these variables by setting them again within a specific element.<br>
+<br>
+Change the value of --penguin-belly to white in the penguin class.<br>
+<br>
+&lt;style><br>
+  :root {<br>
+    --penguin-skin: gray;<br>
+    --penguin-belly: pink;<br>
+    --penguin-beak: orange;<br>
+  }<br>
+<br>
+  body {<br>
+    background: var(--penguin-belly, #c6faf1);<br>
+  }<br>
+<br>
+  .penguin {<br>
+    /* Only change code below this line */<br>
+    --penguin-belly: white;<br>
+    /* Only change code above this line */<br>
+    position: relative;<br>
+    margin: auto;<br>
+    display: block;<br>
+    margin-top: 5%;<br>
+    width: 300px;<br>
+    height: 300px;<br>
+  }<br>
+</p>
+<img src="sample15.png">
+
+<h2>Use a media query to change a variable</h2>
+<p>
+  CSS Variables can simplify the way you use media queries.<br>
+<br>
+For instance, when your screen is smaller or larger than your media query break point, <br>
+you can change the value of a variable, and it will apply its style wherever it is used.<br>
+<br>
+In the :root selector of the media query, change it so --penguin-size is redefined and given a value of 200px. <br>
+Also, redefine --penguin-skin and give it a value of black. Then resize the preview to see this change in action.<br>
+<br>
+&lt;style>
+  :root {<br>
+    --penguin-size: 300px;<br>
+    --penguin-skin: gray;<br>
+    --penguin-belly: white;<br>
+    --penguin-beak: orange;<br>
+  }<br>
+<br>
+  @media (max-width: 350px) {<br>
+    :root {<br>
+      /* Only change code below this line */<br>
+      --penguin-size: 200px;<br>
+      --penguin-skin: black;<br>
+      /* Only change code above this line */<br>
+    }<br>
+  }<br>
+&lt;/style><br>
+</p>
+<main>
 </main>
+
+
+
+
+
   
   
   
-</main>
